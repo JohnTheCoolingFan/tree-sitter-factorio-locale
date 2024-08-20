@@ -1,0 +1,468 @@
+[
+  {
+    "type": "category_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "category_name_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "category_name_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "locale_category",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "category_name",
+          "named": true
+        },
+        {
+          "type": "locale_pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "locale_pair",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "locale_key",
+          "named": true
+        },
+        {
+          "type": "locale_text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "locale_text",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "named_arg",
+          "named": true
+        },
+        {
+          "type": "plural_arg",
+          "named": true
+        },
+        {
+          "type": "positional_arg",
+          "named": true
+        },
+        {
+          "type": "richtext_arg",
+          "named": true
+        },
+        {
+          "type": "richtext_color",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "named_arg",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "plural_arg",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "plural_pair",
+          "named": true
+        },
+        {
+          "type": "plural_rest",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "plural_condition",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "plural_pair",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "locale_text",
+          "named": true
+        },
+        {
+          "type": "plural_condition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "plural_rest",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "locale_text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "richtext_arg",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "richtext_pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "richtext_category",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "richtext_color",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "locale_text",
+          "named": true
+        },
+        {
+          "type": "richtext_color_name",
+          "named": true
+        },
+        {
+          "type": "richtext_color_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "richtext_color_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "richtext_color_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "richtext_gps_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "richtext_img_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "richtext_pair",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "richtext_category",
+          "named": true
+        },
+        {
+          "type": "richtext_gps_value",
+          "named": true
+        },
+        {
+          "type": "richtext_img_value",
+          "named": true
+        },
+        {
+          "type": "richtext_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "richtext_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "locale_category",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "[color=",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_KEY_CTRL__",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_KEY_SHIFT__",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_LEFT_CLICK__",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_MOVE__",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_RIGHT_CLICK__",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_STYLE_BEGIN__",
+    "named": false
+  },
+  {
+    "type": "__CONTROL_STYLE_END__",
+    "named": false
+  },
+  {
+    "type": "__REMARK_COLOR_BEGIN__",
+    "named": false
+  },
+  {
+    "type": "__REMARK_COLOR_END__",
+    "named": false
+  },
+  {
+    "type": "achievement",
+    "named": false
+  },
+  {
+    "type": "acid",
+    "named": false
+  },
+  {
+    "type": "armor=",
+    "named": false
+  },
+  {
+    "type": "black",
+    "named": false
+  },
+  {
+    "type": "blue",
+    "named": false
+  },
+  {
+    "type": "brown",
+    "named": false
+  },
+  {
+    "type": "cyan",
+    "named": false
+  },
+  {
+    "type": "default",
+    "named": false
+  },
+  {
+    "type": "entity",
+    "named": false
+  },
+  {
+    "type": "fluid",
+    "named": false
+  },
+  {
+    "type": "gps=",
+    "named": false
+  },
+  {
+    "type": "gray",
+    "named": false
+  },
+  {
+    "type": "green",
+    "named": false
+  },
+  {
+    "type": "img=",
+    "named": false
+  },
+  {
+    "type": "item",
+    "named": false
+  },
+  {
+    "type": "item-group",
+    "named": false
+  },
+  {
+    "type": "locale_key",
+    "named": true
+  },
+  {
+    "type": "orange",
+    "named": false
+  },
+  {
+    "type": "pink",
+    "named": false
+  },
+  {
+    "type": "positional_arg",
+    "named": true
+  },
+  {
+    "type": "purple",
+    "named": false
+  },
+  {
+    "type": "recipe",
+    "named": false
+  },
+  {
+    "type": "red",
+    "named": false
+  },
+  {
+    "type": "rest=",
+    "named": false
+  },
+  {
+    "type": "special-item=",
+    "named": false
+  },
+  {
+    "type": "technology",
+    "named": false
+  },
+  {
+    "type": "tile",
+    "named": false
+  },
+  {
+    "type": "tooltip=",
+    "named": false
+  },
+  {
+    "type": "train-stop=",
+    "named": false
+  },
+  {
+    "type": "train=",
+    "named": false
+  },
+  {
+    "type": "virtual-signal",
+    "named": false
+  },
+  {
+    "type": "white",
+    "named": false
+  },
+  {
+    "type": "yellow",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}__",
+    "named": false
+  }
+]
