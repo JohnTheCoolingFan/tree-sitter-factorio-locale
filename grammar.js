@@ -10,11 +10,11 @@ module.exports = grammar({
 
     locale_category: $ => seq(
         $.category_name,
-        repeat1($.locale_pair)
+        optional(repeat1($.locale_pair))
     ),
 
     category_name: $ => seq(
-        token.immediate('['),
+        token('['),
         $.category_name_value,
         token.immediate(']')
     ),
